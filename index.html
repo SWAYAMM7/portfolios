@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swayam Adhikari</title>
+  <meta name="description"
+    content="Portfolio of Swayam Adhikari, a BCA Student & Cybersecurity Aspirant exploring product design and front-end development." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MOBILE HEADER                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header class="mobile-header" id="mobile-header">
+    <a href="#" class="mobile-logo">SA<span class="accent-dot">.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MOBILE OVERLAY                              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEFT SIDEBAR (Fixed)                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <!-- Profile Block -->
+      <div class="sidebar-profile">
+        <div class="avatar-container">
+          <div class="avatar-wrapper">
+            <img src="assets/avatar.png" alt="Swayam Adhikari — Profile" class="avatar" width="80" height="80" />
+          </div>
+          <div class="profile-hover-card">
+            <div class="hover-card-image-wrapper">
+              <img src="assets/profile.jpeg" alt="Swayam Adhikari — Full Photo" class="hover-card-image" />
+              <div class="hover-card-overlay">
+                <div class="hover-card-details">
+                  <h4 class="hover-card-name">Swayam Adhikari</h4>
+                  <p class="hover-card-title">BCA Student & Cybersecurity Aspirant</p>
+                  <span class="hover-card-location">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Birtamod-5, Jhapa
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="profile-name">Swayam Adhikari</h1>
+        <p class="profile-title">BCA Student &amp; Cybersecurity Aspirant</p>
+        <p class="profile-bio">
+          BCA student at Mechi Multiple Campus with a focused ambition in cybersecurity and networking.
+          Building secure digital infrastructures, writing clean code, and designing intuitive web platforms.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <a href="#works" class="nav-link active" data-section="works">
+          <span class="nav-indicator"></span>
+          <span class="nav-text">Works</span>
+        </a>
+        <a href="#about" class="nav-link" data-section="about">
+          <span class="nav-indicator"></span>
+          <span class="nav-text">About</span>
+        </a>
+        <a href="#experience" class="nav-link" data-section="experience">
+          <span class="nav-indicator"></span>
+          <span class="nav-text">Experience</span>
+        </a>
+        <a href="#edu-cert" class="nav-link" data-section="edu-cert">
+          <span class="nav-indicator"></span>
+          <span class="nav-text">Education &amp; Certs</span>
+        </a>
+        <a href="#contact" class="nav-link" data-section="contact">
+          <span class="nav-indicator"></span>
+          <span class="nav-text">Contact</span>
+        </a>
+      </nav>
+
+      <!-- Availability -->
+      <div class="availability-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to Remote & Freelance Work</span>
+      </div>
+
+      <!-- Social Links -->
+      <div class="sidebar-social">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link"
+          aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+        </a>
+        <a href="mailto:aswayam88@gmail.com" class="social-link" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RIGHT MAIN CONTENT (Scrollable)             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main class="content" id="main-content">
+
+    <!-- HERO -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-label">
+        <span class="label-mono">Portfolio — 2026</span>
+      </div>
+      <h2 class="hero-heading">
+        I build <em>secure networks</em> and
+        <span class="hero-accent">digital experiences.</span>
+      </h2>
+      <p class="hero-sub">
+        A Bachelor of Computer Applications (BCA) student with a focused ambition in cybersecurity,
+        driven by the belief that robust networking foundations are key to secure infrastructures.
+      </p>
+      <div class="hero-scroll-cue">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- FEATURED WORKS -->
+    <section class="section works-section" id="works">
+      <header class="section-header">
+        <span class="section-label">01</span>
+        <h3 class="section-title">Academic Projects</h3>
+      </header>
+
+      <div class="projects-grid">
+
+        <!-- Pedal Arena (Ecommerce Website) -->
+        <article class="project-card reveal" id="project-pedal-arena">
+          <div class="project-link">
+            <div class="project-image-wrapper">
+              <div class="project-carousel" data-active="0">
+                <div class="carousel-track">
+                  <div class="carousel-item">
+                    <img src="assets/paddlearena1.png" alt="Pedal Arena ecommerce website screenshot 1"
+                      class="project-image" loading="lazy" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/paddlearena2.png" alt="Pedal Arena ecommerce website screenshot 2"
+                      class="project-image" loading="lazy" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/paddlearena3.png" alt="Pedal Arena ecommerce website screenshot 3"
+                      class="project-image" loading="lazy" />
+                  </div>
+                </div>
+                <button type="button" class="carousel-arrow carousel-prev" aria-label="Previous image">‹</button>
+                <button type="button" class="carousel-arrow carousel-next" aria-label="Next image">›</button>
+                <div class="carousel-indicators">
+                  <button type="button" class="indicator active"></button>
+                  <button type="button" class="indicator"></button>
+                  <button type="button" class="indicator"></button>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <span class="overlay-cta">React.js</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">Pedal Arena</h4>
+              <p class="project-desc">A full-featured e-commerce platform for table tennis equipment including a product
+                catalog, shopping cart, and integrated blog.</p>
+              <div class="project-meta">
+                <span class="project-category">E-Commerce Web Platform</span>
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- System OVS -->
+        <article class="project-card reveal" id="project-system-ovs">
+          <div class="project-link">
+            <div class="project-image-wrapper">
+              <div class="project-carousel" data-active="0">
+                <div class="carousel-track">
+                  <div class="carousel-item">
+                    <img src="assets/systemOVS.png" alt="System OVS dashboard screenshot 1" class="project-image"
+                      loading="lazy" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/syatemOVS1.png" alt="System OVS dashboard screenshot 2" class="project-image"
+                      loading="lazy" />
+                  </div>
+                </div>
+                <button type="button" class="carousel-arrow carousel-prev" aria-label="Previous image">‹</button>
+                <button type="button" class="carousel-arrow carousel-next" aria-label="Next image">›</button>
+                <div class="carousel-indicators">
+                  <button type="button" class="indicator active"></button>
+                  <button type="button" class="indicator"></button>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <span class="overlay-cta">Laravel + Tailwind</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">SystemOVS</h4>
+              <p class="project-desc">A secure online voting platform featuring voter authentication, robust data
+                management, and real-time result displays, worked on ui and frontend.</p>
+              <div class="project-meta">
+                <span class="project-category">Online Voting System</span>
+                <span class="project-year">2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Vehicle Renting System -->
+        <article class="project-card reveal" id="project-vehicle-renting">
+          <div class="project-link">
+            <div class="project-image-wrapper project-image-wrapper--empty">
+              <!-- Premium minimalist SVG dashboard graphic -->
+              <svg class="project-svg-fallback" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" rx="8" fill="#141414" />
+                <path d="M40 70H360" stroke="#2a2a2a" stroke-width="2" />
+                <rect x="40" y="90" width="100" height="170" rx="4" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1" />
+                <rect x="160" y="90" width="200" height="80" rx="4" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1" />
+                <rect x="160" y="185" width="200" height="75" rx="4" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1" />
+                <!-- Accents representing cars/booking metrics -->
+                <circle cx="70" cy="130" r="16" fill="rgba(52, 211, 153, 0.1)" stroke="#34d399" stroke-width="2" />
+                <circle cx="120" cy="230" r="8" fill="#555" />
+                <line x1="180" y1="120" x2="260" y2="120" stroke="#ececec" stroke-width="3" stroke-linecap="round" />
+                <line x1="180" y1="140" x2="320" y2="140" stroke="#777" stroke-width="2" stroke-linecap="round" />
+                <path d="M180 215H300" stroke="#34d399" stroke-width="3" stroke-linecap="round" />
+                <circle cx="330" cy="215" r="4" fill="#34d399" />
+                <text x="40" y="45" fill="#777" font-family="monospace" font-size="10" letter-spacing="1">DASHBOARD //
+                  VEHICLE_RENTING</text>
+              </svg>
+              <div class="project-overlay">
+                <span class="overlay-cta">Laravel + PHP</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-title">Vehicle Renting System</h4>
+              <p class="project-desc">A web-based renting application covering catalog filtering, reservation schedules,
+                secure billing, and admin validation workflows.</p>
+              <div class="project-meta">
+                <span class="project-category">Web Application</span>
+                <span class="project-year">2025</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <header class="section-header">
+        <span class="section-label">02</span>
+        <h3 class="section-title">About</h3>
+      </header>
+      <div class="about-content reveal">
+        <div class="about-text">
+          <p class="about-lead">
+            I believe that secure infrastructures start with robust foundations and thoughtful design.
+          </p>
+          <p>
+            I am a cybersecurity aspirant and a Bachelor’s student in Computer Applications (BCA) with a growing
+            interest in ethical hacking,
+            network security, and digital defense technologies. Alongside web development, I am currently learning
+            cybersecurity concepts and
+            exploring tools like Nmap, Wireshark, and Burp Suite to understand network analysis and web application
+            security. I enjoy
+            continuously learning new technologies, improving my technical skills, and building practical knowledge in
+            both software development and cybersecurity.
+          </p>
+          <p>
+            When I'm not configuring network nodes or testing applications for vulnerabilities, I play & compete in
+            district and regional table tennis tournaments.
+          </p>
+        </div>
+        <div class="about-skills">
+          <h4 class="skills-label">Technical Skills</h4>
+          <ul class="skills-list">
+            <li>Networking Basics (Cisco)</li>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Web Development (UI/UX)</li>
+            <li>Graphic Design &amp; Branding</li>
+            <li>Basic Software Proficiency</li>
+            <li>Communication &amp; Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+      <header class="section-header">
+        <span class="section-label">03</span>
+        <h3 class="section-title">Experience</h3>
+      </header>
+
+      <div class="timeline">
+        <article class="timeline-item reveal" id="exp-gd">
+          <div class="timeline-period">2022 — Present</div>
+          <div class="timeline-details">
+            <h4 class="timeline-role">Graphic Designer</h4>
+            <p class="timeline-company">Mechi Mavericks Campus Group</p>
+            <p class="timeline-desc">
+              Designing banners, social media marketing assets, and branding materials for campus hackathons,
+              IT meetups, and community activities. Coordinated with teams to drive audience engagement.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section edu-cert-section" id="edu-cert">
+      <header class="section-header">
+        <span class="section-label">04</span>
+        <h3 class="section-title">Education &amp; Certifications</h3>
+      </header>
+
+      <div class="edu-cert-grid reveal">
+
+        <!-- LEFT — Education -->
+        <div class="edu-column">
+          <h4 class="edu-cert-heading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" />
+            </svg>
+            Education
+          </h4>
+
+          <div class="edu-list">
+            <!-- BCA -->
+            <article class="edu-item">
+              <div class="edu-period">2022 — Present</div>
+              <h5 class="edu-degree">Bachelor of Computer Applications (BCA)</h5>
+              <p class="edu-institution">Mechi Multiple Campus (Tribhuvan University)</p>
+              <p class="edu-desc">Currently pursuing college degree. Gaining comprehensive skills in software
+                development, database management, system analysis, and computer networks.</p>
+            </article>
+
+            <!-- +2 Science -->
+            <article class="edu-item">
+              <div class="edu-period">2020 — 2022</div>
+              <h5 class="edu-degree">+2 Science (Grade 11 &amp; 12)</h5>
+              <p class="edu-institution">Devi Secondary School</p>
+              <p class="edu-desc">Completed higher secondary education with a concentration in Science and Mathematics.
+              </p>
+            </article>
+
+            <!-- SEE -->
+            <article class="edu-item">
+              <div class="edu-period">2010 — 2020</div>
+              <h5 class="edu-degree">Secondary Education Examination (SEE)</h5>
+              <p class="edu-institution">Newton's Education Academy</p>
+              <p class="edu-desc">Completed early education with a strong baseline in logic, mathematics, and
+                extracurricular science activities.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- RIGHT — Certifications -->
+        <div class="cert-column">
+          <h4 class="edu-cert-heading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+            Certifications
+          </h4>
+
+          <div class="cert-list">
+            <article class="cert-item">
+              <div class="cert-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="cert-info">
+                <h5 class="cert-name">Networking Basics</h5>
+                <p class="cert-issuer">Cisco Networking Academy</p>
+              </div>
+            </article>
+
+            <article class="cert-item">
+              <div class="cert-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="cert-info">
+                <h5 class="cert-name">Introduction to Cybersecurity</h5>
+                <p class="cert-issuer">Cisco Networking Academy</p>
+              </div>
+            </article>
+          </div>
+
+          <a href="assets/certificates.pdf" target="_blank" rel="noopener noreferrer" class="download-pdf-btn"
+            id="download-cert-pdf">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <header class="section-header">
+        <span class="section-label">05</span>
+        <h3 class="section-title">Contact</h3>
+      </header>
+
+      <div class="contact-content reveal">
+        <h2 class="contact-heading">
+          Let's build secure<br /><em>networks &amp; applications</em> together.
+        </h2>
+        <p class="contact-sub">
+          Seeking a networking internship or web development opportunity. Let's start a conversation.
+        </p>
+        <a href="mailto:aswayam88@gmail.com" class="contact-email-link" id="contact-email">
+          aswayam88@gmail.com
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/swayam-adhikari-635052287/" class="contact-linkedIn-link" id="contact-LinkedIn">
+          LinkedIn
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p class="footer-text">
+          &copy; 2026 Swayam Adhikari. Designed with intention.
+        </p>
+        <p class="footer-text">
+          Built with vanilla HTML, CSS &amp; JS.
+        </p>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
